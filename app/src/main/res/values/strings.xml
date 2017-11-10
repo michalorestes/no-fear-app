@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">NoFear</string>
+    <string name="welcome_message">Hi!</string>
+    <string name="sign_up_button">Login with Google</string>
+    <string name="log_out_button">Log out</string>
+    <string name="email_label">Your email:</string>
+    <string name="default_text_email_label">Emai...</string>
+    <string name="username_label">Your username:</string>
+    <string name="default_text_username_label">Username...</string>
+    <string name="signup_confirm_button">Complete Sign Up</string>
+    <string name="signup_cancel_button">Cancel</string>
 </resources>

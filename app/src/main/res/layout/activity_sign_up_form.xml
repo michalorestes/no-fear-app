@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.stefan.michal.nofear.SignUpFormActivity">
+
+    <TextView
+        android:id="@+id/email_label"
+        android:text="@string/email_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/email_input_box"
+        android:text="@string/default_text_email_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:text="@string/username_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/username_input_box"
+        android:text="@string/default_text_username_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:text="@string/signup_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmSignUp"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:text="@string/signup_cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cancelSignUp"/>
+
+</LinearLayout>
