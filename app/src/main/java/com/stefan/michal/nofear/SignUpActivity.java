@@ -117,7 +117,8 @@ public class SignUpActivity
             //startActivity(new Intent(SignUpActivity.this, ChallengesActivity.class));
             //check if user exists in the system
             Account account = Account.getAccount(user.getEmail()); //for now account is always gonna be null
-            if (account != null){
+            //TODO: set condition to (account != null)
+            if (account == null){
                 Intent challengesActivity = new Intent(SignUpActivity.this, ChallengesActivity.class);
                 challengesActivity.putExtra("accountEmail", user.getEmail());
                 startActivity(challengesActivity);
@@ -136,7 +137,8 @@ public class SignUpActivity
         }
 
         Log.i(TAG, "Firebase authentication failed");
-        Toast.makeText(SignUpActivity.this, "Firebase authentication has failed", Toast.LENGTH_LONG).show();
+        Toast.makeText(SignUpActivity.this, "Firebase authentication has failed",
+                Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -162,10 +164,6 @@ public class SignUpActivity
     }
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {
-        Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
-        Log.d(TAG, "User email: " + account.getEmail());
-        Log.d(TAG, "User Display Name: " + account.getDisplayName());
-
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
         mAuth.signInWithCredential(credential).addOnCompleteListener(this, this);
     }
