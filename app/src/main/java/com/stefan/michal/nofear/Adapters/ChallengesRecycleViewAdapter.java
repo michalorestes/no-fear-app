@@ -1,5 +1,6 @@
 package com.stefan.michal.nofear.Adapters;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -11,11 +12,14 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
+        public CardView cardView;
         public TextView title;
 
-        public ViewHolder(TextView view){
+
+        public ViewHolder(CardView view){
             super(view);
-            title = view;
+            this.cardView = view;
+            this.title = cardView.findViewById(R.id.challengeTitle);
         }
     }
 
@@ -25,15 +29,17 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
         this.dataSet = dataSet;
     }
 
+    //This is where you create/inflate the view from XML resource file
     @Override
     public ChallengesRecycleViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        TextView title = (TextView) LayoutInflater.from(parent.getContext())
+        CardView view = (CardView) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.challenges_recycle_view, parent, false);
-        ViewHolder v = new ViewHolder(title);
+        ViewHolder viewHolder = new ViewHolder(view);
 
-        return v;
+        return viewHolder;
     }
 
+    //Tell the adapter how to bind data to the view
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.title.setText(dataSet[position]);
