@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChallengesActivity" />
-        <activity android:name=".SignUpFormActivity"></activity>
+        <activity android:name=".SignUpFormActivity" />
+        <activity android:name=".ViewChallengeActivity"></activity>
     </application>
 
 </manifest>

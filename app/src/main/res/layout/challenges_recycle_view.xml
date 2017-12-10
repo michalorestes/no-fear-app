@@ -1,68 +1,60 @@
-<android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="220dp"
-    android:layout_margin="0dp"
-    app:cardUseCompatPadding="true"
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="#FFFFFF"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    app:cardUseCompatPadding="true"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
 
-  <android.support.v7.widget.LinearLayoutCompat
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical">
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:cropToPadding="false"
+      android:scaleType="centerCrop"
+      app:srcCompat="@drawable/sample_picture1" />
 
-      <ImageView
-          android:id="@+id/imageView"
-          android:layout_width="match_parent"
-          android:layout_height="150dp"
-          android:cropToPadding="false"
-          app:srcCompat="@drawable/sample_picture1"
-          android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/challengeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/common_google_play_services_enable_title"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="245 completed/9989 failed"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beginner"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="social"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
 
-      <TextView
-          android:id="@+id/challengeTitle"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="@string/common_google_play_services_enable_title"
-          android:padding="10dp"
-          android:textColor="#000000"
-          android:textSize="16sp"
-          />
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal">
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="245 completed/9989 failed"
-              android:textSize="12sp"
-              android:layout_marginLeft="10dp"/>
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Beginner"
-              android:textSize="12sp"
-              android:layout_marginLeft="10dp"/>
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="social"
-              android:textSize="12sp"
-              android:layout_marginLeft="10dp"/>
-
-
-
-      </LinearLayout>
-
-  </android.support.v7.widget.LinearLayoutCompat>
-
-
-    </android.support.v7.widget.CardView>
 
 

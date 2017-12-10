@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,11 +16,11 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public CardView cardView;
+        public LinearLayout cardView;
         public TextView title;
 
 
-        public ViewHolder(CardView view){
+        public ViewHolder(LinearLayout view){
             super(view);
             this.cardView = view;
             this.title = cardView.findViewById(R.id.challengeTitle);
@@ -41,7 +42,7 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
     //This is where you create/inflate the view from XML resource file
     @Override
     public ChallengesRecycleViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        CardView view = (CardView) LayoutInflater.from(parent.getContext())
+        LinearLayout view = (LinearLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.challenges_recycle_view, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
 

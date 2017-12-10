@@ -44,7 +44,6 @@ public class ChallengesActivity extends AppCompatActivity {
                 "Read a book",
                 "Never lose anything",
                 "Nerve",
-
         };
 
         adapter = new ChallengesRecycleViewAdapter(dataSet);
