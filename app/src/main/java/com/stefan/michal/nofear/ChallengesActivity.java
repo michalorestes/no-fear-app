@@ -4,12 +4,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
+
 import com.stefan.michal.nofear.Adapters.ChallengesRecycleViewAdapter;
 
 public class ChallengesActivity extends AppCompatActivity {
 
     private RecyclerView recycleView;
-    private RecyclerView.Adapter adapter;
+    private ChallengesRecycleViewAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
@@ -47,6 +49,12 @@ public class ChallengesActivity extends AppCompatActivity {
         };
 
         adapter = new ChallengesRecycleViewAdapter(dataSet);
+        adapter.setOnClickListener(new ChallengesRecycleViewAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ChallengesRecycleViewAdapter.ViewHolder item) {
+                Toast.makeText(getApplicationContext(), "Just clicked the button", Toast.LENGTH_LONG).show();
+            }
+        });
         recycleView.setAdapter(adapter);
     }
 }

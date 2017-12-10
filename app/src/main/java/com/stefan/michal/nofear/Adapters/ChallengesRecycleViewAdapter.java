@@ -14,11 +14,14 @@ import com.stefan.michal.nofear.R;
 
 public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<ChallengesRecycleViewAdapter.ViewHolder> {
 
+    public interface OnItemClickListener {
+        void onItemClick(ViewHolder item);
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public LinearLayout cardView;
         public TextView title;
-
 
         public ViewHolder(LinearLayout view){
             super(view);
@@ -26,17 +29,28 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
             this.title = cardView.findViewById(R.id.challengeTitle);
         }
 
+        public void bind(final ViewHolder holder, final OnItemClickListener listener){
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    listener.onItemClick(holder);
+                }
+            });
+        }
+
         public void clickedButton(View view){
             //Toast.makeText(ChallengesActivity.class, "Just clicked the button", Toast.LENGTH_LONG).show();
         }
-
-
     }
 
     String[] dataSet;
+    private OnItemClickListener listener;
 
     public ChallengesRecycleViewAdapter(String[] dataSet){
         this.dataSet = dataSet;
+    }
+
+    public void setOnClickListener(OnItemClickListener listener){
+        this.listener = listener;
     }
 
     //This is where you create/inflate the view from XML resource file
@@ -53,6 +67,7 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.title.setText(dataSet[position]);
+        holder.bind(holder, listener);
     }
 
     @Override
