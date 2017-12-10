@@ -1,5 +1,6 @@
 package com.stefan.michal.nofear;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -53,6 +54,9 @@ public class ChallengesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(ChallengesRecycleViewAdapter.ViewHolder item) {
                 Toast.makeText(getApplicationContext(), "Just clicked the button", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), ViewChallengeActivity.class);
+                startActivity(intent);
+
             }
         });
         recycleView.setAdapter(adapter);
