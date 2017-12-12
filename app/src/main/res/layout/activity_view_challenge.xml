@@ -5,7 +5,6 @@
     tools:context="com.stefan.michal.nofear.ViewChallengeActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorDev"
     android:padding="10dp">
 
     <LinearLayout
@@ -60,7 +59,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Go to a busy road like oxford street \n lie down on the floor for \n 7 minutes!"/>
+                    android:text="Go to a busy road like oxford street \n lie down on the
+                                                                          floor for \n 7 minutes!"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"

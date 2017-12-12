@@ -20,10 +20,10 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public LinearLayout cardView;
+        public CardView cardView;
         public TextView title;
 
-        public ViewHolder(LinearLayout view){
+        public ViewHolder(CardView view){
             super(view);
             this.cardView = view;
             this.title = cardView.findViewById(R.id.challengeTitle);
@@ -56,7 +56,7 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
     //This is where you create/inflate the view from XML resource file
     @Override
     public ChallengesRecycleViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        LinearLayout view = (LinearLayout) LayoutInflater.from(parent.getContext())
+        CardView view = (CardView) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.challenges_recycle_view, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
 

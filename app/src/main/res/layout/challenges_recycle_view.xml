@@ -1,60 +1,98 @@
-<LinearLayout
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:orientation="horizontal"
-    app:cardUseCompatPadding="true"
-    android:paddingTop="3dp"
-    android:paddingBottom="3dp"
-    android:paddingLeft="6dp"
-    android:paddingRight="6dp">
-
-    <ImageView
-      android:id="@+id/imageView"
-      android:layout_width="100dp"
-      android:layout_height="100dp"
-      android:cropToPadding="false"
-      android:scaleType="centerCrop"
-      app:srcCompat="@drawable/sample_picture1" />
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/challengeTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/common_google_play_services_enable_title"
-            android:textColor="#000000"
-            android:textSize="16sp" />
+        android:orientation="vertical"
+        android:padding="10dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="245 completed/9989 failed"
-                android:textSize="12sp"
-                android:layout_marginLeft="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Beginner"
-                android:textSize="12sp"
-                android:layout_marginLeft="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="social"
-                android:textSize="12sp"
-                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sample_picture1"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/challengeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="Approach a stranger"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="by Michal on 12th December 2017"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed iaculis est  sit amet ex bibendum, commodo egestas justo molestie. Aliquam erat  volutpat. Suspendisse eget ante a nisl auctor blandit. Suspendisse libero  dolor, tristique dapibus sapien ut, sodales feugiat nulla. " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="up" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept " />
+
+        </LinearLayout>
+
+
     </LinearLayout>
-</LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+
 
 
 
