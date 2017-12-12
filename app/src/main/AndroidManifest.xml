@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".ChallengesActivity" />
         <activity android:name=".SignUpFormActivity" />
-        <activity android:name=".ViewChallengeActivity"></activity>
+        <activity android:name=".ViewChallengeActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>

@@ -54,7 +54,7 @@ public class ChallengesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(ChallengesRecycleViewAdapter.ViewHolder item) {
                 Toast.makeText(getApplicationContext(), "Just clicked the button", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getApplicationContext(), ViewChallengeActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
                 startActivity(intent);
 
             }
