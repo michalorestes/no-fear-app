@@ -56,7 +56,6 @@ public class ChallengesActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Just clicked the button", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
                 startActivity(intent);
-
             }
         });
         recycleView.setAdapter(adapter);

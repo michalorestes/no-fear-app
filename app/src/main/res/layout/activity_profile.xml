@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent" android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:orientation="horizontal"
+        android:background="@drawable/coverimage"
         android:gravity="bottom"
-        android:background="@drawable/coverimage">
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/sample_picture1"
-            android:layout_margin="15dp"/>
+            android:layout_margin="15dp"
+            android:background="@drawable/sample_picture1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="35dp">
+            android:layout_marginBottom="35dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -31,9 +32,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="michalorestes"
-                android:textColor="#ffffff"
-                android:layout_marginTop="5dp"/>
+                android:textColor="#ffffff" />
         </LinearLayout>
     </LinearLayout>
 
@@ -45,21 +46,33 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="completed"/>
+            android:text="completed" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="completed"/>
+            android:text="completed" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="completed"/>
+            android:text="completed" />
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <TextView
+        android:id="@+id/ActiveChallenges"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="120dp"
+        android:paddingTop="15dp"
+        android:text="TexActive ChallengestView"
+        tools:text="Active Challenges" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
 
 </LinearLayout>
