@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear;
+package com.stefan.michal.nofear.signup;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.stefan.michal.nofear.startscreen.ChallengesActivity;
+import com.stefan.michal.nofear.R;
 
 public class SignUpFormActivity extends AppCompatActivity {
 

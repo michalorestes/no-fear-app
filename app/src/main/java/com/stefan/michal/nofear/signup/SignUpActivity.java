@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear;
+package com.stefan.michal.nofear.signup;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -16,7 +16,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -24,7 +23,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.stefan.michal.nofear.startscreen.ChallengesActivity;
 import com.stefan.michal.nofear.Entities.Account;
+import com.stefan.michal.nofear.R;
 
 
 public class SignUpActivity

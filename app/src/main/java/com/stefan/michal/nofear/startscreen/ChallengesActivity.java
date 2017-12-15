@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear;
+package com.stefan.michal.nofear.startscreen;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
-import com.stefan.michal.nofear.Adapters.ChallengesRecycleViewAdapter;
+import com.stefan.michal.nofear.submitchallenge.AddChallengeActivity;
+import com.stefan.michal.nofear.R;
+import com.stefan.michal.nofear.profile.ProfileActivity;
 
 public class ChallengesActivity extends AppCompatActivity {
 

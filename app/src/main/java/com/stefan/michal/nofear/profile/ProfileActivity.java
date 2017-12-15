@@ -1,10 +1,11 @@
-package com.stefan.michal.nofear;
+package com.stefan.michal.nofear.profile;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import com.stefan.michal.nofear.Adapters.ActiveChallengesAdapter;
+
+import com.stefan.michal.nofear.R;
 
 public class ProfileActivity extends AppCompatActivity {
 

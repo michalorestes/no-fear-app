@@ -1,7 +1,9 @@
-package com.stefan.michal.nofear;
+package com.stefan.michal.nofear.submitchallenge;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.stefan.michal.nofear.R;
 
 public class AddChallengeActivity extends AppCompatActivity {
 
