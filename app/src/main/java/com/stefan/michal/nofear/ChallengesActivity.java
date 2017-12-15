@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -76,17 +77,24 @@ public class ChallengesActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent i = null;
+        Log.i("**", "intent null");
         switch (item.getItemId()) {
-            case R.id.action_favorite:
-                // User chose the "Favorite" action, mark the current item
-                // as a favorite...
-                return true;
-
+            case R.id.action_add_challenge:
+                i = new Intent(getApplicationContext(), AddChallengeActivity.class);
+                Log.i("**", "Add challenge");
+                break;
+            case R.id.action_profile:
+                i = new Intent(getApplicationContext(), ProfileActivity.class);
+                Log.i("**", "Profile");
+                break;
             default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected(item);
-
+                Log.i("**", "default");
+                break;
         }
+        Log.i("**", "starting activity");
+        startActivity(i);
+        Log.i("**", "activity started");
+        return true;
     }
 }

@@ -4,10 +4,16 @@
 
     <!-- "Mark Favorite", should appear as action button if possible -->
     <item
-        android:id="@+id/action_favorite"
-        android:icon="@drawable/coverimage"
+        android:id="@+id/action_add_challenge"
+        android:icon="@mipmap/add_challenge_48dp"
         android:title="Hi"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@mipmap/ic_account_circle_black_48dp"
+        android:title="Hi"
+        app:showAsAction="always" />
 
 
 
