@@ -19,8 +19,12 @@
         <activity android:name=".startscreen.ChallengesActivity" />
         <activity android:name=".signup.SignUpFormActivity" />
         <activity android:name=".startscreen.ViewChallengeActivity" />
-        <activity android:name=".profile.ProfileActivity"></activity>
-        <activity android:name=".submitchallenge.AddChallengeActivity"></activity>
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:parentActivityName=".startscreen.ChallengesActivity" />
+        <activity
+            android:name=".submitchallenge.AddChallengeActivity"
+            android:parentActivityName=".startscreen.ChallengesActivity" />
     </application>
 
 </manifest>
