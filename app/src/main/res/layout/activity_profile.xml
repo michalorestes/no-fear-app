@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
@@ -14,15 +13,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/profile_layout_height"
         android:background="@drawable/coverimage"
         android:gravity="bottom"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_margin="15dp"
+            android:layout_width="@dimen/profile_picture_x_y"
+            android:layout_height="@dimen/profile_picture_x_y"
+            android:layout_margin="@dimen/medium_margin"
             android:background="@drawable/sample_picture1" />
 
         <LinearLayout
@@ -34,14 +33,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="michalorestes"
+                android:text="@string/username"
                 android:textColor="#ffffff" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="michalorestes"
+                android:text="@string/experience_points"
                 android:textColor="#ffffff" />
         </LinearLayout>
     </LinearLayout>
@@ -54,17 +53,17 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="completed" />
+            android:text="@string/challenge_complete_btn" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="completed" />
+            android:text="@string/challenge_complete_btn" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="completed" />
+            android:text="@string/challenge_complete_btn" />
     </LinearLayout>
 
     <TextView
@@ -74,7 +73,7 @@
         android:paddingBottom="15dp"
         android:paddingLeft="120dp"
         android:paddingTop="15dp"
-        android:text="TexActive ChallengestView"
+        android:text="@string/challenge_title"
         tools:text="Active Challenges" />
 
     <android.support.v7.widget.RecyclerView

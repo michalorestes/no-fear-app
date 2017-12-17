@@ -8,86 +8,70 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginTop="5dp">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/sample_picture1"
                 android:scaleType="centerCrop" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:orientation="vertical">
-
                 <TextView
                     android:id="@+id/challengeTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="0dp"
-                    android:text="Approach a stranger"
+                    android:text="@string/challenge_title"
                     android:textColor="#000000"
                     android:textSize="18sp" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="0dp"
-                        android:text="by Michal on 12th December 2017"
-                        android:textSize="10sp" />
+                        android:text="@string/date_added_challenge"
+                        android:textSize="11sp" />
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed iaculis est  sit amet ex bibendum, commodo egestas justo molestie. Aliquam erat  volutpat. Suspendisse eget ante a nisl auctor blandit. Suspendisse libero  dolor, tristique dapibus sapien ut, sodales feugiat nulla. " />
-
+            android:text="@string/challenge_description" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingTop="10dp">
-
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="up" />
-
+                android:text="@string/up_vote" />
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Accept " />
-
+                android:text="@string/accept_challenge_btn" />
         </LinearLayout>
-
-
     </LinearLayout>
 </android.support.v7.widget.CardView>
 

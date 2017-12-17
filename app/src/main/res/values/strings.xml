@@ -1,12 +1,34 @@
 <resources>
+    <!-- General -->
     <string name="app_name">NoFear</string>
-    <string name="welcome_message">Hi!</string>
-    <string name="sign_up_button">Login with Google</string>
-    <string name="log_out_button">Log out</string>
-    <string name="email_label">Your email:</string>
-    <string name="default_text_email_label">Emai...</string>
-    <string name="username_label">Your username:</string>
-    <string name="default_text_username_label">Username...</string>
-    <string name="signup_confirm_button">Complete Sign Up</string>
-    <string name="signup_cancel_button">Cancel</string>
+
+    <!-- Profile Activity -->
+    <string name="username">Username</string>
+    <string name="experience_points">0xp</string>
+
+    <!-- Challenge Card View -->
+    <string name="challenge_title">Challenge title</string>
+    <string name="date_added_challenge">12 December 2012</string>
+    <string name="challenge_description">Long description</string>
+    <string name="up_vote">Up</string>
+    <string name="accept_challenge_btn">Accept</string>
+
+    <!--active challenges -->
+    <string name="lb_active_challenges">Active Challenges:</string>
+    <string name="challenge_complete_btn">Complete</string>=
+    <string name="lb_challenge_time_remaining">00:00</string>
+
+    <!-- Add Challenge activity -->
+    <string name="txt_tip_challenge_title">Title</string>
+    <string name="txt_tip_challenge_description">Description</string>
+    <string name="submit_challenge_btn">Submit</string>
+
+    <!-- Sign activity -->
+    <string name="signup_welcome_msg">Hi!</string>
+    <string name="lb_email">Your email:</string>
+    <string name="txt_tip_email">Email</string>
+    <string name="lb_username">Your username:</string>
+    <string name="txt_tip_username">Username</string>
+    <string name="btn_signup_complete">Complete sign up</string>
+    <string name="btn_signup_cancel">Cancel</string>
 </resources>

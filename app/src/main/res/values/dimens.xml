@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="medium_margin">15dp</dimen>
+    <dimen name="large_margin">25dp</dimen>
+
+    <dimen name="no_padding">0dp</dimen>
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="medium_padding">15dp</dimen>
+    <dimen name="large_padding">25dp</dimen>
+
+    <dimen name="time_remaining_padding">100dp</dimen>
+    <dimen name="profile_layout_height">200dp</dimen>
+    <dimen name="profile_picture_x_y">70dp</dimen>
+
+</resources>
