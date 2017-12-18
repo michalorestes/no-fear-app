@@ -35,7 +35,6 @@ public class SignUpActivity
 
     public static final int RC_SIGN_IN = 1;
     public static final String TAG = "** SIGN IN ACTIVITY -> ";
-
     private SignInButton mGoogleButton;
     private GoogleApiClient mGoogleApiClient;
     private FirebaseAuth mAuth;

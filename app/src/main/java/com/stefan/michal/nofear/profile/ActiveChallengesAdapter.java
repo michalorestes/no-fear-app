@@ -11,19 +11,6 @@ import com.stefan.michal.nofear.R;
 
 public class ActiveChallengesAdapter extends RecyclerView.Adapter<ActiveChallengesAdapter.ViewHolder> {
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-
-        public CardView cardView;
-        public TextView title;
-
-        public ViewHolder(CardView itemView) {
-            super(itemView);
-            Log.i("TAG**", "getting title view->>>>>>>>>>>>>>>");
-            this.cardView = itemView;
-            this.title = cardView.findViewById(R.id.activeChallengeTitle);
-        }
-    }
-
     String[] dataSet;
 
     public ActiveChallengesAdapter(String[] dataSet){
@@ -50,5 +37,18 @@ public class ActiveChallengesAdapter extends RecyclerView.Adapter<ActiveChalleng
     @Override
     public int getItemCount() {
         return dataSet.length;
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+
+        public CardView cardView;
+        public TextView title;
+
+        public ViewHolder(CardView itemView) {
+            super(itemView);
+            Log.i("TAG**", "getting title view->>>>>>>>>>>>>>>");
+            this.cardView = itemView;
+            this.title = cardView.findViewById(R.id.activeChallengeTitle);
+        }
     }
 }

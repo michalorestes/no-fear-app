@@ -11,35 +11,7 @@ import com.stefan.michal.nofear.R;
 
 public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<ChallengesRecycleViewAdapter.ViewHolder> {
 
-    public interface OnItemClickListener {
-        void onItemClick(ViewHolder item);
-    }
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-
-        public CardView cardView;
-        public TextView title;
-
-        public ViewHolder(CardView view){
-            super(view);
-            this.cardView = view;
-            this.title = cardView.findViewById(R.id.challengeTitle);
-        }
-
-        public void bind(final ViewHolder holder, final OnItemClickListener listener){
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override public void onClick(View v) {
-                    listener.onItemClick(holder);
-                }
-            });
-        }
-
-        public void clickedButton(View view){
-            //Toast.makeText(ChallengesActivity.class, "Just clicked the button", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    String[] dataSet;
+    private String[] dataSet;
     private OnItemClickListener listener;
 
     public ChallengesRecycleViewAdapter(String[] dataSet){
@@ -70,5 +42,33 @@ public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<Challenge
     @Override
     public int getItemCount() {
         return dataSet.length;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(ViewHolder item);
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+
+        private CardView cardView;
+        public TextView title;
+
+        public ViewHolder(CardView view){
+            super(view);
+            this.cardView = view;
+            this.title = cardView.findViewById(R.id.challengeTitle);
+        }
+
+        public void bind(final ViewHolder holder, final OnItemClickListener listener){
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    listener.onItemClick(holder);
+                }
+            });
+        }
+
+        public void clickedButton(View view){
+            //Toast.makeText(ChallengesActivity.class, "Just clicked the button", Toast.LENGTH_LONG).show();
+        }
     }
 }
