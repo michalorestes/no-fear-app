@@ -1,32 +1,38 @@
-package com.stefan.michal.nofear.startscreen;
+package com.nf.michal.nofear.profile;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
-import android.support.v7.widget.Toolbar;
 
-import com.stefan.michal.nofear.submitchallenge.AddChallengeActivity;
-import com.stefan.michal.nofear.R;
-import com.stefan.michal.nofear.profile.ProfileActivity;
+import com.nf.michal.nofear.R;
 
-public class ChallengesActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     private RecyclerView recycleView;
-    private ChallengesRecycleViewAdapter adapter;
+    private ActiveChallengesAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_challenges);
+        setContentView(R.layout.activity_profile);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Profile");
+
+        recycleView = findViewById(R.id.recycleView);
+        layoutManager = new LinearLayoutManager(this);
+        recycleView.setLayoutManager(layoutManager);
 
         String[] dataSet =  {
                 "Never lose anything",
@@ -53,18 +59,7 @@ public class ChallengesActivity extends AppCompatActivity {
                 "Nerve",
         };
 
-        recycleView = findViewById(R.id.recycleView);
-        layoutManager = new LinearLayoutManager(this);
-        recycleView.setLayoutManager(layoutManager);
-        adapter = new ChallengesRecycleViewAdapter(dataSet);
-
-        adapter.setOnClickListener(new ChallengesRecycleViewAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(ChallengesRecycleViewAdapter.ViewHolder item) {
-                Toast.makeText(getApplicationContext(), "Just clicked the button", Toast.LENGTH_LONG).show();
-            }
-        });
-
+        adapter = new ActiveChallengesAdapter(dataSet);
         recycleView.setAdapter(adapter);
     }
 
@@ -76,7 +71,6 @@ public class ChallengesActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.app_bar, menu);
         return true;
     }
 
@@ -89,16 +83,17 @@ public class ChallengesActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent i = null;
+        Log.i("**", "item id: " + item.getItemId());
         switch (item.getItemId()) {
-            case R.id.action_add_challenge:
-                i = new Intent(getApplicationContext(), AddChallengeActivity.class);
-                break;
-            case R.id.action_profile:
-                i = new Intent(getApplicationContext(), ProfileActivity.class);
-                break;
+            case R.id.homeAsUp:
+                NavUtils.navigateUpFromSameTask(this);
+                Log.i("**", "Clicked");
+                return true;
         }
-        startActivity(i);
 
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 }
+
+
+

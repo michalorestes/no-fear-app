@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear;
+package com.nf.michal.nofear;
 
 import org.junit.Test;
 

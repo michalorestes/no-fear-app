@@ -1,9 +1,9 @@
-package com.stefan.michal.nofear.startscreen;
+package com.nf.michal.nofear.startscreen;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import com.stefan.michal.nofear.R;
+import com.nf.michal.nofear.R;
 
 public class ViewChallengeActivity extends AppCompatActivity {
 

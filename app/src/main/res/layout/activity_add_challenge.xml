@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.stefan.michal.nofear.submitchallenge.AddChallengeActivity">
+    tools:context="app.zone.comfort.noFear.submitchallenge.AddChallengeActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"

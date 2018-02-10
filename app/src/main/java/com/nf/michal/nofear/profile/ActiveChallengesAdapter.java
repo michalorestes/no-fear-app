@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear.profile;
+package com.nf.michal.nofear.profile;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.stefan.michal.nofear.R;
+import com.nf.michal.nofear.R;
 
 public class ActiveChallengesAdapter extends RecyclerView.Adapter<ActiveChallengesAdapter.ViewHolder> {
 

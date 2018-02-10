@@ -1,47 +1,34 @@
 {
   "project_info": {
-    "project_number": "19994127488",
-    "firebase_url": "https://project-no-fear.firebaseio.com",
-    "project_id": "project-no-fear",
-    "storage_bucket": "project-no-fear.appspot.com"
+    "project_number": "no-fear-app",
+    "firebase_url": "https://no-fear-app.firebaseio.com",
+    "project_id": "no-fear-app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:19994127488:android:e5276ee4adca997d",
+        "mobilesdk_app_id": "1:638583664507:android:2859e4637ffa5f04",
         "android_client_info": {
-          "package_name": "michal.stefan.com"
+          "package_name": "com.nf.michal.nofear"
         }
       },
       "oauth_client": [
         {
-          "client_id": "19994127488-a32os5g9hs8nln7o1lk148ld5k0miod6.apps.googleusercontent.com",
+          "client_id": "638583664507-pf0dsnpidioeaf6dcpucabgsacbh7rgc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "michal.stefan.com",
-            "certificate_hash": "08c908f77115c2f72b26afbecaafac37148f178d"
+            "package_name": "com.nf.michal.nofear",
+            "certificate_hash": "7c3a94d2c9672bd9ca3e32a788f03bab6f3a7bd7"
           }
         },
         {
-          "client_id": "19994127488-nnbb5qm02eaida3v952n78uad96ucmvb.apps.googleusercontent.com",
+          "client_id": "638583664507-ur03r4gn96bagv128v0jli3b4af4gd95.apps.googleusercontent.com",
           "client_type": 3
-        },
-        {
-          "client_id": "19994127488-c6n9aqfdi2mbh4g8unmpdoo3o2miod5c.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "19994127488-vktm2km0d24ohdg6bau3sugv4nhu54fq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "michal.stefan.com",
-            "certificate_hash": "7c0792a385bbd5080840f1a507e9d7a7ca7ee1ff"
-          }
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAYuxIvh_WcUoaQO37BlHdgE3kNzYWcNtA"
+          "current_key": "AIzaSyD78r58qgTW5jnCucpPGFDESK47LL4DAjA"
         }
       ],
       "services": {
@@ -52,7 +39,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "19994127488-nnbb5qm02eaida3v952n78uad96ucmvb.apps.googleusercontent.com",
+              "client_id": "638583664507-ur03r4gn96bagv128v0jli3b4af4gd95.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

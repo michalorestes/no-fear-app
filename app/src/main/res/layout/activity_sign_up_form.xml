@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.stefan.michal.nofear.signup.SignUpFormActivity">
+    tools:context="app.zone.comfort.noFear.signup.SignUpFormActivity">
 
     <TextView
         android:id="@+id/email_label"

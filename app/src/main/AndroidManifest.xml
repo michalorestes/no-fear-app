@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stefan.michal.nofear">
+    package="com.nf.michal.nofear">
 
     <application
         android:allowBackup="true"
@@ -19,11 +19,9 @@
         <activity android:name=".startscreen.ChallengesActivity" />
         <activity android:name=".signup.SignUpFormActivity" />
         <activity android:name=".startscreen.ViewChallengeActivity" />
-        <activity
-            android:name=".profile.ProfileActivity"
-            android:parentActivityName=".startscreen.ChallengesActivity" />
-        <activity
-            android:name=".submitchallenge.AddChallengeActivity"
+        <activity android:name=".profile.ProfileActivity"
+            android:parentActivityName=".startscreen.ChallengesActivity"/>
+        <activity android:name=".submitchallenge.AddChallengeActivity"
             android:parentActivityName=".startscreen.ChallengesActivity" />
     </application>
 

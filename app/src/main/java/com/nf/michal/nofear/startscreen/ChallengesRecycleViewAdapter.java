@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear.startscreen;
+package com.nf.michal.nofear.startscreen;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.stefan.michal.nofear.R;
+import com.nf.michal.nofear.R;
 
 public class ChallengesRecycleViewAdapter extends RecyclerView.Adapter<ChallengesRecycleViewAdapter.ViewHolder> {
 

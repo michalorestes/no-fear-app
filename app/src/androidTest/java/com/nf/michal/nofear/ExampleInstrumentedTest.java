@@ -1,4 +1,4 @@
-package com.stefan.michal.nofear;
+package com.nf.michal.nofear;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.stefan.michal.nofear", appContext.getPackageName());
+        assertEquals("com.nf.michal.nofear", appContext.getPackageName());
     }
 }

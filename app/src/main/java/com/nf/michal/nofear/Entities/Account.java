@@ -1,4 +1,8 @@
-package com.stefan.michal.nofear.Entities;
+package com.nf.michal.nofear.Entities;
+
+/**
+ * Created by Michal on 11/11/2017.
+ */
 
 public class Account {
 

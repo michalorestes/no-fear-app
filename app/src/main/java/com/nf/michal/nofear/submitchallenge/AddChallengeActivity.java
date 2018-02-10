@@ -1,16 +1,16 @@
-package com.stefan.michal.nofear.submitchallenge;
+package com.nf.michal.nofear.submitchallenge;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.stefan.michal.nofear.R;
+import com.nf.michal.nofear.R;
 
 public class AddChallengeActivity extends AppCompatActivity {
 
@@ -48,7 +48,7 @@ public class AddChallengeActivity extends AppCompatActivity {
         Intent i = null;
         Log.i("**", "item id: " + item.getItemId());
         switch (item.getItemId()) {
-            case R.id.homeAsUp:
+            case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 Log.i("**", "Clicked");
                 return true;

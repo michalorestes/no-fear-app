@@ -1,9 +1,9 @@
-package com.stefan.michal.nofear.signup;
+package com.nf.michal.nofear.signup;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -23,9 +23,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.stefan.michal.nofear.startscreen.ChallengesActivity;
-import com.stefan.michal.nofear.Entities.Account;
-import com.stefan.michal.nofear.R;
+import com.nf.michal.nofear.Entities.Account;
+import com.nf.michal.nofear.R;
+import com.nf.michal.nofear.startscreen.ChallengesActivity;
 
 
 public class SignUpActivity
@@ -35,6 +35,7 @@ public class SignUpActivity
 
     public static final int RC_SIGN_IN = 1;
     public static final String TAG = "** SIGN IN ACTIVITY -> ";
+
     private SignInButton mGoogleButton;
     private GoogleApiClient mGoogleApiClient;
     private FirebaseAuth mAuth;
