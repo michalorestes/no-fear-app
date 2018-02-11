@@ -1,4 +1,4 @@
-package com.nf.michal.nofear.submitchallenge;
+package com.nf.michal.nofear.Activities.submitchallenge;
 
 import android.content.Intent;
 import android.os.Bundle;

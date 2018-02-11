@@ -1,4 +1,4 @@
-package com.nf.michal.nofear.profile;
+package com.nf.michal.nofear.Activities.profile;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.nf.michal.nofear.R;
 
 public class ActiveChallengesAdapter extends RecyclerView.Adapter<ActiveChallengesAdapter.ViewHolder> {
@@ -15,7 +14,6 @@ public class ActiveChallengesAdapter extends RecyclerView.Adapter<ActiveChalleng
 
     public ActiveChallengesAdapter(String[] dataSet){
         this.dataSet = dataSet;
-        Log.i("TAG", "adapter constructor -------------------------------->>>>");
     }
 
     //This is where you create/inflate the view from XML resource file
@@ -46,7 +44,6 @@ public class ActiveChallengesAdapter extends RecyclerView.Adapter<ActiveChalleng
 
         public ViewHolder(CardView itemView) {
             super(itemView);
-            Log.i("TAG**", "getting title view->>>>>>>>>>>>>>>");
             this.cardView = itemView;
             this.title = cardView.findViewById(R.id.activeChallengeTitle);
         }

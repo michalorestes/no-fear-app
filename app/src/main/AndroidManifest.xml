@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoFearTheme">
-        <activity android:name=".signup.SignUpActivity">
+        <activity android:name=".Activities.signup.SignUpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".startscreen.ChallengesActivity" />
-        <activity android:name=".signup.SignUpFormActivity" />
-        <activity android:name=".startscreen.ViewChallengeActivity" />
-        <activity android:name=".profile.ProfileActivity"
-            android:parentActivityName=".startscreen.ChallengesActivity"/>
-        <activity android:name=".submitchallenge.AddChallengeActivity"
-            android:parentActivityName=".startscreen.ChallengesActivity" />
+        <activity android:name=".Activities.startscreen.ChallengesActivity" />
+        <activity android:name=".Activities.signup.SignUpFormActivity" />
+        <activity android:name=".Activities.startscreen.ViewChallengeActivity" />
+        <activity android:name=".Activities.profile.ProfileActivity"
+            android:parentActivityName=".Activities.startscreen.ChallengesActivity"/>
+        <activity android:name=".Activities.submitchallenge.AddChallengeActivity"
+            android:parentActivityName=".Activities.startscreen.ChallengesActivity" />
     </application>
 
 </manifest>

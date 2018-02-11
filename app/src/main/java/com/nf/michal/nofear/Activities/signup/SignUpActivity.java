@@ -1,4 +1,4 @@
-package com.nf.michal.nofear.signup;
+package com.nf.michal.nofear.Activities.signup;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,9 +23,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.nf.michal.nofear.Entities.Account;
+import com.nf.michal.nofear.Entities.Profile;
 import com.nf.michal.nofear.R;
-import com.nf.michal.nofear.startscreen.ChallengesActivity;
+import com.nf.michal.nofear.Activities.startscreen.ChallengesActivity;
 
 
 public class SignUpActivity
@@ -117,9 +117,9 @@ public class SignUpActivity
             //TODO: clean up this section of the code, too many duplicates
             //startActivity(new Intent(SignUpActivity.this, ChallengesActivity.class));
             //check if user exists in the system
-            Account account = Account.getAccount(user.getEmail()); //for now account is always gonna be null
-            //TODO: set condition to (account != null)
-            if (account == null){
+            Profile profile = Profile.getAccount(user.getEmail()); //for now profile is always gonna be null
+            //TODO: set condition to (profile != null)
+            if (profile == null){
                 Intent challengesActivity = new Intent(SignUpActivity.this, ChallengesActivity.class);
                 challengesActivity.putExtra("accountEmail", user.getEmail());
                 startActivity(challengesActivity);
@@ -131,7 +131,7 @@ public class SignUpActivity
                 return;
             }
 
-            //TODO: Pass Account object to next activity
+            //TODO: Pass Profile object to next activity
             Toast.makeText(SignUpActivity.this, "You're signed in", Toast.LENGTH_LONG).show();
 
             return;

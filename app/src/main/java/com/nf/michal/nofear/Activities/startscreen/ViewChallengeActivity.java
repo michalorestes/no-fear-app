@@ -1,4 +1,4 @@
-package com.nf.michal.nofear.startscreen;
+package com.nf.michal.nofear.Activities.startscreen;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
