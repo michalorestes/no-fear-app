@@ -39,26 +39,6 @@ public class ChallengesActivity extends AppCompatActivity implements Runnable {
         String[] dataSet =  {
                 "Never lose anything",
                 "Nerve",
-                "Lay down on the floor",
-                "Approach a stranger and say hello",
-                "Never give up",
-                "Read a book",
-                "Never lose anything",
-                "Nerve",
-                "Lay down on the floor",
-                "Approach a stranger and say hello",
-                "Scream on the street",
-                "Never give up",
-                "Read a book",
-                "Never lose anything",
-                "Nerve",
-                "Lay down on the floor",
-                "Approach a stranger and say hello",
-                "Scream on the street",
-                "Never give up",
-                "Read a book",
-                "Never lose anything",
-                "Nerve",
         };
 
         recycleView = findViewById(R.id.recycleView);
