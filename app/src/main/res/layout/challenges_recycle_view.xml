@@ -21,11 +21,11 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/sample_picture1"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop" android:contentDescription="TODO" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/challengeTitle"
@@ -42,12 +42,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
                         android:text="@string/date_added_challenge"
                         android:textSize="11sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -59,18 +60,15 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingTop="10dp">
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
                 android:layout_weight="1"
-                android:text="@string/up_vote" />
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/accept_challenge_btn" />
+                android:background="@color/cardview_light_background"
+                app:srcCompat="@mipmap/add_challenge_48dp" />
+
         </LinearLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>
